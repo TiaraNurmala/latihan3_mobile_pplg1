@@ -6,9 +6,35 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('ini halaman 2'),
-      ),
-    );
+      body: Column(
+        children:[Row(children: [ Container(
+            height: 100,
+            width: 100,
+            color: Colors.red,
+          ),
+          Container(
+            height: 100,
+            width: 100,
+            color: Colors.blue,
+            ),],), Row(children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.amber
+              )
+            ],)
+
+        ]
+            
+            ),
+        );
+        
+      
+    
   }
 }
